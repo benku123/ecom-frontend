@@ -1,0 +1,157 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+  }
+  
+  .container-shirt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    height: 600px;
+  }
+  
+  .container-shirt form{
+    padding:50px;
+    width:900px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    border-radius: 30px;
+    position: relative;
+  }
+  
+  .container-shirt form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .container-shirt form .row .col{
+    flex:1 1 250px;
+  }
+  .container-shirt form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  .container-shirt form .row .col .inputBox{
+    margin:15px 0;
+  }
+  .container-shirt form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .container-shirt form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .container-shirt form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container-shirt form .row .col{
+    display: flex;
+    gap:15px;
+  }
+  
+  .container-shirt form .row .col .inputBox{
+    margin-top: 5px;
+  }
+  
+  .container-shirt form .row .col .inputBox img{  
+    height: 300px;
+    margin-top: 5px;
+  }
+  
+  .submit-btn{
+    position: absolute;
+    bottom: -150px; left: 270px;
+    width: 800px;
+    padding:12px;
+    font-size: 17px;
+    background: rgb(0, 0, 0);
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover{
+    background: rgb(27,77,62);
+  }
+  
+  .submit-btn-pink{
+    position: absolute;
+    top: 1320px; left: 270px;
+    width: 800px;
+    padding:12px;
+    font-size: 17px;
+    background: rgb(0, 0, 0);
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .submit-btn-pink:hover{
+    background: rgb(203, 139, 197);
+  }
+
+  .shirt-block{
+    width: 450px; height: 200px; 
+    position: absolute;
+    top: 180px; right: 100px;
+    align-items:center;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .shirt-info{
+    align-self: flex-start;
+  }
+
+  .buy-shirt{
+    display: flex;  justify-content: space-between;
+    align-items: center;
+    width: 230px; margin-top: 30px;
+  }
+
+  .inc-btn{
+    border: 1px solid green; border-radius: 180px;
+    font-size: 1.5em;  padding: 10px;
+    display: flex; align-items:center;
+    justify-content: center;
+    width: 35px; height: 35px;
+    background-color: inherit; color: green;
+    outline: none;
+  }
+
+  .dec-btn{
+    border: 1px solid red; border-radius: 180px;
+    font-size: 2em;  padding: 10px;
+    display: flex; align-items:center;
+    justify-content: center;
+    width: 35px; height: 35px;
+    background-color: inherit; color: red;
+    outline: none;
+  }
+  .buy-shirt p{
+    position: relative; top: 7px;
+    font-size: 1.5em;
+  }
+  .count{color:black;}
+  .total-p{
+    margin-top: 50px;
+    align-self: flex-start;
+    font-size: 2em; color: black;
+  }

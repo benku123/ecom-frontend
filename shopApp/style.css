@@ -1,0 +1,107 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+a{ text-decoration: none; }
+input{outline: none;}
+button{ cursor: pointer;  outline: none;}
+
+.carts{
+    background-color: whitesmoke; height: 50px; 
+    display: flex;  align-items:center;
+    /* margin-top: 50px; */
+}
+.carts div{
+    width: 100px; margin-left: 80px;
+    display: flex; justify-content: space-between;
+}
+
+.carts a{
+    color: black; font-weight: 600;
+    font-size: 1.1em;
+}
+
+.carts a:hover{
+    color: red;
+}
+.carts p{font-size: 1.2em; font-weight: bold;}
+
+/* SECTION => TSHIRTS */
+.tshirt-section{
+    margin-top: 100px; height: 1800px;
+    display: flex; justify-content: space-evenly;
+    align-items:center; position: relative;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+}
+.slide-tshirt{
+    width: 100%;
+    top: 0; height: 100%;
+    transition: transform 1s;
+    /* background-color:white; */
+    display: flex; justify-content: space-evenly;
+    align-items:center; object-fit: cover;
+}
+
+.tshirt{
+    display: flex; flex-direction: column;
+    align-items:center; justify-content: space-between;
+    height: 500px;
+}
+
+.tshirt img{
+    width: 240px; height: 250px;
+}
+.tshirt p{
+    width: 190px; font-size: 1.2em;
+    color: coral; text-align: center;
+}
+.price-btn{
+    padding: 0 30px;
+    border: 2px solid #dc3545; border-radius: 10px;
+    background-color: white; color: #dc3545;
+    font-size: 1.2em; font-weight: bold;
+    transition: 1s;
+}
+
+.price-btn:hover{
+    background-color:#dc3545; color:white;
+    border:2px solid black;
+}
+
+.color-shirt{
+    width: 100%; height: 47px;
+    display: flex; justify-content: space-between;
+}
+.color-btn{
+    width: 45px; height: 45px;
+    border: 2px solid rgb(194, 189, 189);  border-radius: 180px;
+    outline: none; border: 2px solid grey;
+}
+color-btn:active{
+    border: none;
+}
+.color-1{ background-color: rgb(132, 12, 12); }
+.color-2{ background-color: rgb(116, 116, 215); }
+.color-3{ background-color: black; }
+.color-4{ background-color: rgb(158, 150, 150); }
+
+.size-shirt{
+    height: 40px; width: 100%; 
+    display: flex; justify-content: space-between;
+}
+.size-btn{
+    width: 35px; height: 35px;
+    border-radius:180px;
+    font-weight: bold; border:2px solid red;
+    background-color: white; color: red;
+    outline: none;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">billing address</h3>
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Abdujabbarov Samandar">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="abdujabbarovsamandar0100@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="City ~ District ~ Street ~ House">
+                </div>
+                <div class="inputBox">
+                    <span>region :</span>
+                    <input type="text" placeholder="Namangan">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>country :</span>
+                        <input type="text" placeholder="Uzbekistan">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="160 100">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <h3 class="title">your order</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="./payment-methods-secure.png" alt="Picture not supported">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Mr.Abdujabbarov Samandar">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="January">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV number:</span>
+                        <input type="password" placeholder="1234">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="proceed to payment" class="submit-btn">
+    </form>
+</div>
+<script>
+    let submit = document.querySelector(".submit-btn")
+
+
+    submit.addEventListener("click", function() {
+        alert("Successfully paid. Thank You !")
+    })
+</script>
+</body>
+</html>

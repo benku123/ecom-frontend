@@ -1,0 +1,99 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+a{ text-decoration: none; }
+input{outline: none;}
+button{ cursor: pointer;  outline: none; }
+
+.carts{
+    background-color: whitesmoke; height: 50px; 
+    display: flex;  align-items:center;
+    /* margin-top: 50px; */
+}
+.carts div{
+    width: 100px; margin-left: 80px;
+    display: flex; justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carts a{
+    color: black; font-weight: 600;
+    font-size: 1.1em;
+}
+
+.carts a:hover{
+    color: red;
+}
+.carts p{font-size: 1.2em; font-weight: bold;}
+
+/* Adding Item to Shop */
+
+.add-item-section{
+    padding: 0 130px; height: 500px;
+}
+.add-item-form{
+    display: flex; justify-content: space-between;
+    align-items:center; margin-top: 50px; height: 100%;
+}
+
+.add-img{
+    width: 400px; height: 420px;
+}
+.item-info{
+    width: 600px; height: 450px; display: flex; 
+    flex-direction: column; justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.input-number{
+    width: 300px; border: 2px solid red;
+    border-radius: 10px; color: red; background: inherit;
+    padding: 5px;
+}
+
+.item-number{
+    display: flex; flex-direction: column;
+}
+
+.color-shirt{
+    width: 250px; height: 47px;
+    display: flex; justify-content: space-between;
+}
+.color-btn{
+    width: 45px; height: 45px;
+    border: 2px solid rgb(194, 189, 189);  border-radius: 180px;
+}
+.color-1{ background-color: rgb(132, 12, 12); }
+.color-2{ background-color: rgb(116, 116, 215); }
+.color-3{ background-color: black; }
+.color-4{ background-color: rgb(158, 150, 150); }
+
+.size-shirt{
+    height: 40px; width: 250px; 
+    display: flex; justify-content: space-between;
+}
+.size-btn{
+    width: 35px; height: 35px;
+    border-radius:180px;
+    font-weight: bold; border:2px solid red;
+    background-color: white; color: darkred;
+}
+
+.active-size{
+    background-color: red; color: white;
+}
+
+.add-btn{
+    border: 2px solid red;
+    color: red; background-color: inherit;
+    border-radius:20px; padding: 5px 30px;
+    font-weight: bold; 
+    transition: 1s;
+}
+
+.add-btn:hover{
+    background-color:red;
+    color: white;
+}
+
